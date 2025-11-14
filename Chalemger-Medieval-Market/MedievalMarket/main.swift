@@ -35,13 +35,13 @@ func printMenu() {
 }
 
 func displayItems() {
-    print("Items disponíveis para compra:")
+    print("\nItems disponíveis para compra:")
     for (item, price) in items {
         print("\(item): $\(price)")
     }
 }
 func displayInventory() {
-    print("Seu inventário:")
+    print("\nSeu inventário:")
     for (item, quantity) in inventory {
         print("\(item): \(quantity)")
     }
@@ -132,8 +132,7 @@ while running {
     } else {
         print("Opção inválida. Tente novamente.")
     }
-    print("Obrigado por visitar nossa loja \(name)!!")
+    
 }
 
-
-
+print("Obrigado por visitar nossa loja \(name)!!")
