@@ -67,7 +67,7 @@ func sellItem(){
         print("Digite o preço do item que você quer vender em decimal:")
         if let priceText = readLine(), let price = Double(priceText){
             Money += price
-            inventory[itemName, default: 0] -= 1
+            inventory.removeValue(forKey: itemName)
             print("\nVocê vendeu um(a) \(itemName) por J$\(price).\n")
         }else{
             print("\nO valor não está em decimal.\n")
